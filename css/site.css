@@ -64,7 +64,8 @@ img {
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 42px;
+  min-width: 46px;
+  padding: 0 8px;
   height: 42px;
   border: 1px solid var(--line);
   border-radius: 10px;
