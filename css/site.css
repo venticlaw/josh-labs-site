@@ -552,6 +552,73 @@ h3 {
   padding: clamp(22px, 4vw, 36px);
 }
 
+.traction-panel {
+  align-self: center;
+}
+
+.traction-number {
+  margin: 10px 0 14px;
+  color: var(--paper);
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: clamp(64px, 9vw, 112px);
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.traction-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 28px 0 72px;
+}
+
+.traction-grid .support-card {
+  min-height: 220px;
+}
+
+.traction-card .check-list {
+  margin-top: 8px;
+}
+
+.compact-list {
+  gap: 8px;
+}
+
+.compact-list li {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.metric-table {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.metric-table div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.metric-table div:last-child {
+  border-bottom: 0;
+}
+
+.metric-table span {
+  color: var(--muted);
+}
+
+.metric-table strong {
+  color: var(--paper);
+  white-space: nowrap;
+}
+
 .check-list {
   display: grid;
   gap: 14px;
@@ -679,6 +746,7 @@ h3 {
   .hero,
   .split,
   .product-grid,
+  .traction-grid,
   .support-grid {
     grid-template-columns: 1fr;
   }
