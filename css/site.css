@@ -66,23 +66,19 @@ img {
 }
 
 .brand-mark {
-  overflow: hidden;
   display: grid;
   place-items: center;
-  width: 58px;
+  min-width: 58px;
   height: 42px;
+  padding: 0 9px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #f8f5ec;
+  color: #120d0a;
+  background: linear-gradient(135deg, var(--orange), var(--gold));
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
   box-shadow: 0 14px 34px rgba(255, 77, 42, 0.24);
-}
-
-.brand-mark img {
-  width: 168px;
-  max-width: none;
-  height: 70px;
-  object-fit: cover;
-  object-position: 50% 33%;
 }
 
 .brand strong,
@@ -318,12 +314,17 @@ h3 {
 
 .logo-stage {
   position: relative;
-  min-height: clamp(360px, 42vw, 560px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+  min-height: 0;
 }
 
 .logo-stage::before {
   position: absolute;
-  inset: 14% -6% 8% 10%;
+  inset: 8% -5% -6% 9%;
+  z-index: -1;
   content: "";
   border: 1px solid rgba(251, 247, 237, 0.16);
   border-radius: var(--radius);
@@ -335,7 +336,7 @@ h3 {
 }
 
 .plaque-card {
-  position: absolute;
+  position: relative;
   overflow: hidden;
   border: 1px solid rgba(251, 247, 237, 0.2);
   border-radius: var(--radius);
@@ -347,9 +348,11 @@ h3 {
 .logo-crop::after {
   position: absolute;
   inset: auto 0 0;
-  height: 26%;
+  z-index: 2;
+  height: 36%;
   content: "";
-  background: linear-gradient(180deg, transparent, #f8f5ec 48%);
+  background: linear-gradient(180deg, transparent 0%, #f8f5ec 34%);
+  pointer-events: none;
 }
 
 .plaque-card-parent::after {
@@ -358,19 +361,20 @@ h3 {
 
 .plaque-card img,
 .logo-crop img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 32%;
-  transform: scale(1.06);
+  object-fit: contain;
+  object-position: center 30%;
+  transform: none;
 }
 
 .plaque-card-parent {
-  top: 0;
-  right: 0;
-  left: 2%;
+  grid-column: 1 / -1;
   z-index: 3;
-  height: clamp(235px, 26vw, 330px);
+  aspect-ratio: 1577 / 997;
+  height: auto;
 }
 
 .plaque-card-parent img {
@@ -379,27 +383,22 @@ h3 {
 }
 
 .plaque-card-yms {
-  right: 4%;
-  bottom: 8%;
   z-index: 2;
-  width: min(64%, 380px);
-  height: clamp(160px, 17vw, 220px);
-  transform: rotate(2deg);
+  height: clamp(124px, 12vw, 166px);
+  transform: rotate(-1.5deg);
 }
 
 .plaque-card-bass {
-  bottom: 0;
-  left: 0;
   z-index: 1;
-  width: min(58%, 340px);
-  height: clamp(145px, 15vw, 200px);
-  transform: translateX(-4%) rotate(-2deg);
+  height: clamp(124px, 12vw, 166px);
+  transform: rotate(1.5deg);
 }
 
 .logo-crop {
   position: relative;
   display: grid;
-  min-height: 230px;
+  min-height: 220px;
+  padding: 18px;
   overflow: hidden;
   background: #f8f5ec;
 }
@@ -407,10 +406,12 @@ h3 {
 .suite-crop {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
+  padding: 0;
   background: rgba(5, 5, 7, 0.72);
 }
 
 .suite-crop img {
+  padding: 18px;
   background: #f8f5ec;
 }
 
@@ -496,6 +497,7 @@ h3 {
 .product-card .logo-crop {
   width: 100%;
   aspect-ratio: 16 / 11;
+  min-height: 0;
   background: var(--coal);
   transition: transform 260ms ease, filter 260ms ease;
 }
@@ -685,26 +687,18 @@ h3 {
   }
 
   .logo-stage {
-    min-height: 520px;
+    width: min(100%, 680px);
+    min-height: 0;
+    margin: 0 auto;
   }
 
   .plaque-card-parent {
-    right: 0;
-    left: 0;
-    height: 250px;
+    height: auto;
   }
 
   .plaque-card-yms,
   .plaque-card-bass {
-    width: min(82%, 420px);
-  }
-
-  .plaque-card-yms {
-    bottom: 15%;
-  }
-
-  .plaque-card-bass {
-    bottom: 0;
+    height: clamp(104px, 24vw, 140px);
   }
 
   .signal-row {
@@ -718,5 +712,20 @@ h3 {
 
   .site-footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo-stage {
+    gap: 10px;
+  }
+
+  .plaque-card-yms,
+  .plaque-card-bass {
+    height: 96px;
+  }
+
+  .suite-crop {
+    grid-template-columns: 1fr;
   }
 }
