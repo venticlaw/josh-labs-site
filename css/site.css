@@ -619,6 +619,42 @@ h3 {
   white-space: nowrap;
 }
 
+.upgrade-flow {
+  padding: 72px 0;
+}
+
+.flow-steps {
+  display: grid;
+  gap: 12px;
+}
+
+.flow-steps div {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.flow-steps span {
+  display: block;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.flow-steps strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--paper);
+  font-size: 18px;
+}
+
+.flow-steps p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .check-list {
   display: grid;
   gap: 14px;
