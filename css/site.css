@@ -143,9 +143,21 @@ img {
   background: rgba(255, 255, 255, 0.06);
 }
 
+.button.disabled {
+  color: rgba(251, 247, 237, 0.64);
+  border-color: rgba(251, 247, 237, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .nav-cta:hover,
 .button:hover {
   transform: translateY(-2px);
+}
+
+.button.disabled:hover {
+  transform: none;
 }
 
 .button.secondary:hover {
@@ -570,6 +582,18 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   padding: 28px 0 72px;
+}
+
+.download-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.download-hero {
+  min-height: calc(100vh - 74px);
+}
+
+.status-panel .check-list {
+  margin-top: 0;
 }
 
 .traction-grid .support-card {
