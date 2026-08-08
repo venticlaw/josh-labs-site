@@ -660,11 +660,15 @@ h3 {
   }
 
   .site-nav a {
-    display: block;
+    display: flex;
+    align-items: center;
+    min-height: 32px;
     padding: 0;
   }
 
   .site-nav .nav-cta {
+    justify-content: center;
+    min-height: 44px;
     color: #120d0a;
   }
 
