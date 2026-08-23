@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The first product test is boring on purpose | Fix Your Sound</title>
+    <meta name="description" content="Why Fix Your Sound beta QA starts with install, scan, open, audio playback, save, and reopen in Logic and Ableton.">
+    <link rel="icon" type="image/png" href="../assets/brand/fix-your-sound-parent-logo-2026-08-06.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/site.css?v=20260823-blog-v1">
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark">FYS</span><span><strong>Fix Your Sound</strong><small>Audio plugins for modern producers</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button><nav class="site-nav" id="site-nav" data-site-nav><a href="../your-mix-sucks.html">Your Mix Sucks</a><a href="../bassphat.html">BassPhat</a><a href="../plugin-suite.html">Bundle</a><a href="./">Blog</a><a href="../downloads.html">Downloads</a><a href="../support.html">Support</a></nav></header>
+    <main>
+      <section class="page-title"><div class="section"><p class="eyebrow">Product QA</p><h1>The first product test is boring on purpose.</h1><p class="lede">Before a plugin gets interesting, it has to open. If a producer installs a plugin and it does not show up in the DAW, the product promise is already broken.</p></div></section>
+      <section class="section article-layout">
+        <article class="article-body">
+          <p>The first Fix Your Sound beta test is basic: install, scan, open, play audio, save the session, reopen the session, and report what broke.</p>
+          <h2>Logic has its own path</h2>
+          <p>On Mac, Apple documents Audio Units plug-ins as `.component` files in Audio plug-in locations, including system and user Library paths. Logic Pro uses Audio Units, and Apple points users to Plug-in Manager if an Audio Unit does not appear or needs to be activated.</p>
+          <p>That means a real beta cannot just say it works on Mac. It has to prove it appears in Logic, opens, processes audio, and survives normal session behavior.</p>
+          <h2>Ableton has its own path too</h2>
+          <p>Ableton documents plug-in setup through Live's Plug-Ins browser and preferences. Its help docs also explain common cases where VST or AU plug-ins do not appear, including rescanning plug-ins and checking system folders.</p>
+          <p>That means Ableton QA has to be its own checklist. Not assumed. Tested.</p>
+          <h2>Why this matters</h2>
+          <p>Investors like AI. Producers like tools that do not waste their night. Both are true, but the beta has to earn trust at the bottom layer first.</p>
+          <blockquote>If it does not scan, the AI does not matter.</blockquote>
+          <p>That is why the campaign should show install quality as proof, not just feature hype.</p>
+          <div class="source-list"><h2>Sources checked</h2><ul><li><a href="https://support.apple.com/en-us/102239">Apple Support: third-party Audio Units locations</a></li><li><a href="https://support.apple.com/en-lamr/guide/logicpro/lgcp22a0dab0/mac">Apple Support: Logic Audio Units</a></li><li><a href="https://developer.apple.com/documentation/audiotoolbox/audio-components">Apple Developer: Audio Components</a></li><li><a href="https://www.ableton.com/en/manual/working-with-instruments-and-effects/">Ableton Live Manual: working with instruments and effects</a></li><li><a href="https://help.ableton.com/hc/en-us/articles/115000349184-VST-AU-plug-in-doesn-t-appear-in-Live-s-Browser">Ableton Help: VST/AU plug-in does not appear</a></li><li><a href="https://help.ableton.com/hc/en-us/articles/16261934134940-Rescanning-plug-ins-in-Live-12-1">Ableton Help: rescanning plug-ins in Live 12.1</a></li></ul></div>
+        </article>
+        <aside class="aside"><div class="panel"><h3>Install note</h3><p>Exact install paths should follow the current signed package and QA results.</p><div class="actions"><a class="button secondary" href="./">All posts</a></div></div></aside>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Fix Your Sound. Audio tools for better records.</span><span><a href="./">All blog posts</a></span></footer>
+    <script src="../js/site.js"></script>
+  </body>
+</html>
