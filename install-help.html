@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260827-wide-beta">
+    <link rel="stylesheet" href="css/site.css?v=20260827-journey">
   </head>
   <body>
     <header class="site-header">
@@ -53,6 +53,29 @@
         <article class="product-card"><div class="copy"><p class="eyebrow">Step 1</p><h3>Install</h3><p>Run the approved installer package, then restart the DAW before looking for the plugin.</p></div></article>
         <article class="product-card"><div class="copy"><p class="eyebrow">Step 2</p><h3>Scan</h3><p>Logic should scan Audio Units on launch. Ableton users should enable Audio Units or VST3 sources and rescan.</p></div></article>
         <article class="product-card"><div class="copy"><p class="eyebrow">Step 3</p><h3>Verify</h3><p>Open the plugin on audio, pass signal through it, save the session, close it, and reopen it.</p></div></article>
+      </section>
+
+      <section class="band">
+        <div class="section split">
+          <div>
+            <p class="eyebrow">Expected Mac locations</p>
+            <h2>The files should land where a DAW can scan them.</h2>
+          </div>
+          <div class="panel">
+            <ul class="check-list compact-list">
+              <li><strong>Audio Units:</strong> <code>/Library/Audio/Plug-Ins/Components/</code></li>
+              <li><strong>VST3:</strong> <code>/Library/Audio/Plug-Ins/VST3/</code></li>
+              <li><strong>Support files:</strong> <code>/Library/Application Support/Fix Your Sound/</code></li>
+              <li><strong>Support screenshot:</strong> send the folder view or DAW scanner result if the plugin does not appear.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section support-grid">
+        <article class="support-card"><p class="eyebrow">Logic Pro pass</p><h3>Audio Units scan</h3><p>Restart Logic, open Plug-In Manager, confirm the plugin validates, insert it on an audio track, then save and reopen the session.</p></article>
+        <article class="support-card"><p class="eyebrow">Ableton pass</p><h3>AU or VST3 source</h3><p>Enable Audio Units or VST3 in Plug-In Sources, rescan, insert the plugin on audio, then save and reopen the Set.</p></article>
+        <article class="support-card"><p class="eyebrow">Fail state</p><h3>Send proof</h3><p>Include product, Lite or Full, macOS, Mac chip, DAW version, installer name, and a screenshot of the scan or error.</p></article>
       </section>
     </main>
     <footer class="site-footer"><span>Fix Your Sound. Audio tools for better records.</span><span><a href="mailto:support@joshyouwut.com">support@joshyouwut.com</a></span></footer>
