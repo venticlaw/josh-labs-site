@@ -99,12 +99,12 @@ img {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: clamp(10px, 1.4vw, 18px);
 }
 
 .site-nav a {
   color: var(--muted);
-  font-size: 14px;
+  font-size: clamp(12px, 1.05vw, 14px);
   font-weight: 750;
   text-decoration: none;
   transition: color 160ms ease, transform 160ms ease;
