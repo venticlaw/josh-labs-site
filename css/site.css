@@ -1776,6 +1776,18 @@ h3 {
   padding-bottom: 84px;
 }
 
+.founder-sources {
+  padding-top: 84px;
+}
+
+.founder-sources .support-card {
+  align-content: start;
+}
+
+.founder-sources .button {
+  margin-top: 18px;
+}
+
 .founder-note {
   padding-bottom: 92px;
 }
