@@ -16,12 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260827-journey">
+    <link rel="stylesheet" href="css/site.css?v=20260912-studio-command">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
-        <span class="brand-mark">FYS</span>
+        <span class="brand-logo"><img src="assets/brand/fix-your-sound-parent-logo-2026-08-06.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio plugins for modern producers</small></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
@@ -39,40 +39,88 @@
     </header>
 
     <main>
-      <section class="hero-home">
-        <div class="hero-bg" aria-hidden="true"></div>
-        <div class="section hero-content">
-          <div class="hero-copy">
-            <p class="eyebrow">Audio plugins for modern producers</p>
-            <h1>Fix Your Sound</h1>
-            <p class="lede">Blunt, focused audio tools for producers who want faster mix decisions, heavier low end, and fewer bloated plugin windows.</p>
+      <section class="hero-home studio-hero">
+        <div class="studio-ambient" aria-hidden="true"></div>
+        <div class="section hero-content studio-hero-content">
+          <div class="hero-copy studio-copy">
+            <p class="eyebrow">Audio tools for real mixes</p>
+            <h1>Your mix has nowhere to hide.</h1>
+            <p class="lede">Hear the problems faster, tighten the low end, and bounce with fewer second guesses.</p>
             <div class="hero-actions">
-              <a class="button primary" href="downloads.html">Beta / Upgrade</a>
-              <a class="button secondary" href="plugin-suite.html">Get the Suite</a>
+              <a class="button primary" href="downloads.html">Beta Access</a>
+              <a class="button secondary" href="plugin-suite.html">Explore Plugins</a>
+            </div>
+            <div class="studio-proof-strip" aria-label="Product focus">
+              <div><span class="signal-icon signal-wave"></span><strong>Real Problems</strong></div>
+              <div><span class="signal-icon signal-sliders"></span><strong>Focused Tools</strong></div>
+              <div><span class="signal-icon signal-target"></span><strong>Better Mixes</strong></div>
             </div>
           </div>
-          <div class="logo-stage" aria-label="Fix Your Sound logo system">
-            <div class="plaque-card plaque-card-parent">
-              <img src="assets/brand/fix-your-sound-parent-logo-2026-08-06.png" alt="Fix Your Sound logo">
+
+          <div class="studio-console" aria-label="Fix Your Sound plugin interface preview">
+            <div class="console-card yms-console">
+              <div class="console-title">
+                <span class="mini-logo"><img src="assets/plugins/your-mix-sucks-official-plaque.png" alt=""></span>
+                <div>
+                  <span>Fix Your Sound Mix Intelligence</span>
+                  <strong>Your Mix <em>Sucks</em></strong>
+                </div>
+              </div>
+              <div class="console-grid">
+                <div class="score-dial">
+                  <span>0</span>
+                  <small>/100</small>
+                  <strong>Mix Score</strong>
+                </div>
+                <div class="spectrum-panel">
+                  <div class="tabs" aria-hidden="true"><span>Spectrum</span><span>Loudness</span><span>Stereo</span><span>Dynamics</span></div>
+                  <div class="spectrum-graph">
+                    <span class="trace reference"></span>
+                    <span class="trace your-mix"></span>
+                    <i class="pin pin-one"></i>
+                    <i class="pin pin-two"></i>
+                    <i class="pin pin-three"></i>
+                  </div>
+                  <div class="issue-row" aria-hidden="true">
+                    <span>Sub / Low End</span>
+                    <span>Low Mids</span>
+                    <span>Presence</span>
+                    <span>Air</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="plaque-card plaque-card-yms">
-              <img src="assets/plugins/your-mix-sucks-official-plaque.png" alt="Your Mix Sucks logo">
+
+            <div class="console-card bass-console">
+              <div class="console-title compact">
+                <strong>Bass<em>Phat</em></strong>
+                <span>Low end color</span>
+              </div>
+              <div class="bass-knob">
+                <span>35%</span>
+              </div>
+              <div class="mini-knob-row" aria-hidden="true">
+                <span>Color</span>
+                <span>Focus</span>
+                <span>Drive</span>
+              </div>
+              <div class="sub-view" aria-hidden="true"></div>
             </div>
-            <div class="plaque-card plaque-card-bass">
-              <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo">
-            </div>
-          </div>
-          <div class="signal-row" aria-label="Product prices">
-            <div><span>Your Mix Sucks</span><strong>$59</strong></div>
-            <div><span>BassPhat</span><strong>$59</strong></div>
-            <div><span>Plugin Suite</span><strong>$99</strong></div>
           </div>
         </div>
       </section>
 
-      <section class="section product-grid" aria-label="Products">
-        <article class="product-card">
-          <div class="logo-crop">
+      <section class="section studio-products" aria-label="Products">
+        <div class="section-head studio-products-head">
+          <div>
+            <p class="eyebrow">Our plugins</p>
+            <h2>Tools for a better mix.</h2>
+          </div>
+          <p>Keep the beta path controlled while the brand starts feeling like the product: sharp, musical, and premium.</p>
+        </div>
+        <div class="product-grid studio-product-grid">
+        <article class="product-card studio-product-card">
+          <div class="product-badge product-badge-yms">
             <img src="assets/plugins/your-mix-sucks-official-plaque.png" alt="Your Mix Sucks logo">
           </div>
           <div class="copy">
@@ -80,14 +128,14 @@
             <h3>Your Mix Sucks</h3>
             <p>Score the mix, surface problem areas, and explain why the fix matters with timestamped mix notes.</p>
             <div class="actions">
-              <span class="button disabled" aria-disabled="true">Checkout QA pending</span>
+              <span class="button disabled" aria-disabled="true">Beta pending</span>
               <a class="button secondary" href="your-mix-sucks.html">Details</a>
             </div>
           </div>
         </article>
 
-        <article class="product-card">
-          <div class="logo-crop">
+        <article class="product-card studio-product-card">
+          <div class="product-badge product-badge-bass">
             <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo">
           </div>
           <div class="copy">
@@ -95,31 +143,31 @@
             <h3>BassPhat</h3>
             <p>Add weight, harmonic attitude, and mono-aware bass control for 808s, kicks, bass, and low-end groups.</p>
             <div class="actions">
-              <span class="button disabled" aria-disabled="true">Checkout QA pending</span>
+              <span class="button disabled" aria-disabled="true">Beta pending</span>
               <a class="button secondary" href="bassphat.html">Details</a>
             </div>
           </div>
         </article>
 
-        <article class="product-card">
-          <div class="logo-crop suite-crop" aria-label="Plugin Suite logos">
-            <img src="assets/plugins/your-mix-sucks-official-plaque.png" alt="Your Mix Sucks logo">
-            <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo">
+        <article class="product-card studio-product-card suite-card">
+          <div class="suite-stack" aria-label="Plugin Suite">
+            <span></span><span></span><span></span>
           </div>
           <div class="copy">
             <p class="eyebrow">Best value</p>
             <h3>Plugin Suite</h3>
             <p>Get YMS plus BassPhat for the current major versions and save $19 versus buying both separately.</p>
             <div class="actions">
-              <span class="button disabled" aria-disabled="true">Checkout QA pending</span>
+              <span class="button disabled" aria-disabled="true">Beta pending</span>
               <a class="button secondary" href="plugin-suite.html">Compare</a>
             </div>
           </div>
         </article>
+        </div>
       </section>
 
-      <section class="band">
-        <div class="section split">
+      <section class="band studio-band">
+        <div class="section split studio-split">
           <div>
             <p class="eyebrow">Focused workflow</p>
             <h2>Fast decisions for mixes that need to hit.</h2>
