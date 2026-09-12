@@ -16,21 +16,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260827-journey">
+    <link rel="stylesheet" href="css/site.css?v=20260912-fys-product">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html"><span class="brand-mark">FYS</span><span><strong>Fix Your Sound</strong><small>Support</small></span></a>
+      <a class="brand" href="index.html" aria-label="Fix Your Sound home">
+        <span class="brand-logo"><img src="assets/brand/fix-your-sound-parent-logo-2026-08-06.png" alt="" aria-hidden="true"></span>
+        <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
+      </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
-        <a href="your-mix-sucks.html">YMS</a>
-        <a href="bassphat.html">BassPhat</a>
-        <a href="plugin-suite.html">Bundle</a>
-        <a href="beta.html">Beta</a>
-        <a href="blog/">Blog</a>
-        <a href="downloads.html">Downloads</a>
-        <a href="founder.html">Founder</a>
-        <a class="nav-cta" href="mailto:support@joshyouwut.com">Email Support</a>
+        <a href="index.html#products">Products</a>
+        <a href="founder.html">About</a>
+        <a href="support.html">Support</a>
+        <a class="nav-cta" href="downloads.html">Beta Access</a>
       </nav>
     </header>
     <main>
@@ -38,9 +37,9 @@
         <div>
           <p class="eyebrow">Install and purchase help</p>
           <h1>Support without the scavenger hunt.</h1>
-          <p class="lede">For plugin install issues, checkout questions, DAW compatibility, license scope, or bug reports, contact support with your product, macOS version, DAW, and order email.</p>
+          <p class="lede">For plugin install issues, checkout questions, Logic Pro support, license scope, or bug reports, contact support with your product, macOS version, DAW, and order email.</p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:support@joshyouwut.com?subject=Fix%20Your%20Sound%20Plugin%20Support">Email support</a>
+            <a class="button primary" href="mailto:support@fixyoursound.com?subject=Fix%20Your%20Sound%20Plugin%20Support">Email support</a>
             <a class="button secondary" href="install-help.html">Install Help</a>
           </div>
         </div>
@@ -48,7 +47,7 @@
           <p class="eyebrow">Mac plugin support</p>
           <ul class="check-list">
             <li><strong>Logic Pro:</strong> install the AU package, reopen Logic Pro, then check Audio Units.</li>
-            <li><strong>Ableton Live on macOS:</strong> enable Audio Units in Plug-In Sources, then rescan.</li>
+            <li><strong>Ableton Live:</strong> not beta-verified yet. Use only after the Ableton QA pass is complete.</li>
             <li><strong>License scope:</strong> one-time purchase for the current major version unless your order says otherwise.</li>
           </ul>
         </aside>
@@ -56,7 +55,7 @@
       <section class="section support-grid">
         <article class="support-card"><h3>Purchase support</h3><p>Include the email used at checkout and the product purchased.</p><a class="button secondary" href="refunds.html">Purchase Help</a></article>
         <article class="support-card"><h3>Install support</h3><p>Include macOS version, DAW name/version, and what the plugin scanner shows.</p><a class="button secondary" href="install-help.html">Install Help</a></article>
-        <article class="support-card"><h3>Compatibility</h3><p>Check the current Mac, Logic Pro, Ableton Live, AU, and VST3 support notes.</p><a class="button secondary" href="compatibility.html">Compatibility</a></article>
+        <article class="support-card"><h3>Compatibility</h3><p>Check the current Mac, Logic Pro, AU, and pending DAW support notes.</p><a class="button secondary" href="compatibility.html">Compatibility</a></article>
         <article class="support-card"><h3>Downloads</h3><p>See the current Lite and Full availability notes for each plugin.</p><a class="button secondary" href="downloads.html">Downloads</a></article>
       </section>
       <section class="band">
@@ -86,13 +85,13 @@
         <div class="faq-list">
           <article><h3>Should I uninstall Lite before Full?</h3><p>No. Keep Lite installed until Full opens and recalls correctly in your DAW, then decide what you want to keep.</p></article>
           <article><h3>Why is paid access not open yet?</h3><p>Full versions will open when the paid release is ready.</p></article>
-          <article><h3>Where should the plugin show up?</h3><p>On Mac, check Audio Units in Logic Pro and Audio Units or VST3 sources in Ableton Live.</p></article>
+          <article><h3>Where should the plugin show up?</h3><p>On Mac, check Audio Units in Logic Pro. Ableton Live support is pending a separate QA pass.</p></article>
           <article><h3>What do I send if it fails?</h3><p>Send the product name, Lite or Full, macOS version, Mac chip, DAW/version, installer name, and a screenshot of the scan or error.</p></article>
           <article><h3>Does this work on Windows?</h3><p>Fix Your Sound is Mac-first today. Windows support should not be assumed unless a specific Windows build is announced.</p></article>
         </div>
       </section>
     </main>
-    <footer class="site-footer"><span>Fix Your Sound</span><a href="mailto:support@joshyouwut.com">support@joshyouwut.com</a></footer>
+    <footer class="site-footer"><span>Fix Your Sound</span><a href="mailto:support@fixyoursound.com">support@fixyoursound.com</a></footer>
     <script src="js/site.js"></script>
   </body>
 </html>
