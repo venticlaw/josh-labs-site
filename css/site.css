@@ -1131,7 +1131,7 @@ h3 {
   background: linear-gradient(180deg, #fffaf0 0%, #e9e2d5 42%, var(--orange) 43%, #ff6a3e 100%);
   background-clip: text;
   color: transparent;
-  font-size: clamp(68px, 9vw, 124px);
+  font-size: clamp(56px, 7.8vw, 108px);
   letter-spacing: 0;
   text-shadow: 0 26px 70px rgba(255, 77, 42, 0.18);
 }
