@@ -628,7 +628,7 @@ h3 {
 }
 
 .download-hero {
-  min-height: calc(100vh - 74px);
+  min-height: calc(92vh - 74px);
 }
 
 .journey-hero {
@@ -688,6 +688,18 @@ h3 {
 
 .comparison-section {
   padding: 26px 0 72px;
+}
+
+.beta-flow-section {
+  padding: 22px 0 76px;
+}
+
+.beta-flow-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.beta-flow-grid div {
+  min-height: 190px;
 }
 
 .comparison-table,
@@ -1989,7 +2001,8 @@ h3 {
   .blog-grid.three,
   .article-layout,
   .journey-step,
-  .comparison-row {
+  .comparison-row,
+  .beta-flow-grid {
     grid-template-columns: 1fr;
   }
 
