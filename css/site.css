@@ -980,6 +980,18 @@ h3 {
   padding-top: 26px;
 }
 
+.bass-story-section {
+  padding-top: 26px;
+}
+
+.bass-story-copy {
+  border-color: rgba(68, 227, 162, 0.34);
+  background:
+    radial-gradient(circle at 18% 16%, rgba(68, 227, 162, 0.2), transparent 34%),
+    radial-gradient(circle at 86% 86%, rgba(255, 77, 42, 0.16), transparent 30%),
+    linear-gradient(180deg, rgba(27, 30, 39, 0.96), rgba(12, 13, 18, 0.96));
+}
+
 .blog-grid {
   display: grid;
   gap: 16px;
