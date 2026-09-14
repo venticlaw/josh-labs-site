@@ -1757,11 +1757,17 @@ h3 {
 
 .site-footer {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
   padding: 34px clamp(18px, 4vw, 56px);
   color: var(--muted);
   border-top: 1px solid var(--line);
+}
+
+.site-footer .rights-note {
+  max-width: 760px;
+  line-height: 1.5;
 }
 
 .site-footer a {
