@@ -2033,6 +2033,46 @@ h3 {
   line-height: 1.62;
 }
 
+.founder-accolades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+
+.founder-accolades li {
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 77, 42, 0.32);
+  border-radius: var(--radius);
+  color: rgba(251, 247, 237, 0.88);
+  background: rgba(255, 77, 42, 0.08);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.founder-accolades.large {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.founder-accolades.large li {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.45;
+  text-transform: none;
+}
+
+.founder-accolades.large strong {
+  color: var(--paper);
+}
+
 @keyframes signalDrift {
   from {
     transform: translateY(0);
