@@ -5,7 +5,7 @@ Static GitHub Pages site for the Fix Your Sound plugin startup.
 ## Scope
 
 - Plugin-first brand site.
-- Products: Your Mix Sucks, BassPhat, Plugin Suite.
+- Products: Your Mix Trash, BassPhat, Plugin Suite.
 - Direct Lemon Squeezy checkout links for current products.
 - Support and install guidance for Mac AU rollout.
 

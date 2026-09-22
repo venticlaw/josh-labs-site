@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Your Mix Trash official mark</title>
+  <desc id="desc">A Fix Your Sound plugin mark combining a trash can silhouette with an audio waveform.</desc>
+  <defs>
+    <style>
+      .ink { fill: #090909; }
+      .stroke { fill: none; stroke: #090909; stroke-width: 34; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #ff4f28; }
+      .cream { fill: #f7efe0; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: -0.035em; }
+    </style>
+  </defs>
+  <rect class="cream" width="1200" height="900" rx="24"/>
+  <g transform="translate(0 8)">
+    <path class="ink" d="M397 190h406c22 0 41 17 43 39l11 105H343l11-105c2-22 21-39 43-39z"/>
+    <path class="ink" d="M475 108h250c19 0 35 15 37 34l8 77H430l8-77c2-19 18-34 37-34zm39 50-7 40h186l-7-40H514z"/>
+    <path class="ink" d="M315 316h570c16 0 29 13 29 29v42H286v-42c0-16 13-29 29-29z"/>
+    <path class="ink" d="M346 394h508l-45 315c-5 35-35 61-70 61H461c-35 0-65-26-70-61l-45-315z"/>
+    <path class="cream" d="M447 442h41l20 234h-41L447 442zm133 0h41v234h-41V442zm133 0h41l-20 234h-41l20-234z"/>
+    <path class="stroke" d="M93 555h185l28-72 44 147 39-229 53 305 51-275 51 257 56-347 56 347 51-257 51 275 53-305 39 229 44-147 28 72h185"/>
+    <path class="accent" d="M873 163 996 71l33 56-133 74-23-38z"/>
+    <path class="accent" d="M918 268 1078 235l12 65-164 12-8-44z"/>
+    <path class="accent" d="M902 218 1055 133l26 60-163 63-16-38z"/>
+  </g>
+  <g transform="translate(95 770)">
+    <text class="word ink" x="0" y="0" font-size="118">YOUR MIX</text>
+    <text class="word accent" x="625" y="0" font-size="118">TRASH</text>
+  </g>
+</svg>
