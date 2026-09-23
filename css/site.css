@@ -395,8 +395,7 @@ h3 {
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
 
-.plaque-card::after,
-.logo-crop::after {
+.plaque-card::after {
   position: absolute;
   inset: auto 0 0;
   z-index: 2;
@@ -448,9 +447,15 @@ h3 {
 .logo-crop {
   position: relative;
   display: grid;
+  place-items: center;
   min-height: 220px;
   padding: 18px;
-  overflow: hidden;
+  overflow: visible;
+  background: #f8f5ec;
+}
+
+.product-card .logo-crop,
+.logo-crop.mark-crop {
   background: #f8f5ec;
 }
 
@@ -468,6 +473,20 @@ h3 {
 
 .product-logo-crop {
   min-height: 320px;
+}
+
+.product-logo-crop img,
+.logo-crop.mark-crop img {
+  width: min(82%, 460px);
+  height: auto;
+  max-height: 82%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.logo-crop.mark-crop {
+  min-height: 300px;
+  padding: clamp(24px, 4vw, 42px);
 }
 
 .price-strip {
@@ -551,6 +570,18 @@ h3 {
   min-height: 0;
   background: var(--coal);
   transition: transform 260ms ease, filter 260ms ease;
+}
+
+.product-card .logo-crop {
+  overflow: visible;
+  background: #f8f5ec;
+}
+
+.product-card .logo-crop img {
+  width: 86%;
+  height: 86%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .product-card:hover {
@@ -1150,6 +1181,18 @@ h3 {
   line-height: 1;
 }
 
+.product-hero h1 {
+  font-size: clamp(40px, 5.4vw, 64px);
+}
+
+.support-hero h1,
+.download-hero h1,
+.founder-hero h1,
+.journey-hero h1 {
+  font-size: clamp(42px, 5.2vw, 76px);
+  line-height: 0.96;
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1454,7 +1497,7 @@ h3 {
   place-items: center;
   width: 56px;
   height: 56px;
-  overflow: hidden;
+  overflow: visible;
   flex: 0 0 auto;
   border: 1px solid rgba(255, 77, 42, 0.55);
   border-radius: 7px;
@@ -1462,8 +1505,10 @@ h3 {
 }
 
 .mini-logo img {
-  width: 154%;
-  max-width: none;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .console-grid {
@@ -1770,15 +1815,23 @@ h3 {
   place-items: center;
   width: 92px;
   height: 92px;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid rgba(251, 247, 237, 0.14);
   border-radius: var(--radius);
   background: rgba(251, 247, 237, 0.95);
 }
 
 .product-badge img {
-  width: 158%;
-  max-width: none;
+  width: 88%;
+  height: 88%;
+  max-width: 88%;
+  object-fit: contain;
+}
+
+.product-badge .trash-mark {
+  width: 96%;
+  height: 96%;
+  max-width: 96%;
 }
 
 .suite-stack,
@@ -1795,24 +1848,26 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
-  overflow: hidden;
+  overflow: visible;
   background: rgba(251, 247, 237, 0.92);
 }
 
 .suite-logo-pair span {
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow: visible;
   background: #f8f5ec;
 }
 
 .suite-logo-pair img {
-  width: 190%;
-  max-width: none;
+  width: 86%;
+  height: 86%;
+  max-width: 86%;
+  object-fit: contain;
 }
 
 .suite-logo-pair span:nth-child(2) img {
-  width: 165%;
+  width: 86%;
 }
 
 .suite-stack span {
