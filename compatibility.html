@@ -7,7 +7,7 @@
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Compatibility | Fix Your Sound</title>
-    <meta name="description" content="Mac, Logic Pro, AU, VST3, and pending DAW compatibility status for Fix Your Sound plugins.">
+    <meta name="description" content="Mac AU and VST3 compatibility status for Fix Your Sound plugins in Logic Pro and Ableton Live.">
     <meta property="og:title" content="Compatibility | Fix Your Sound">
     <meta property="og:description" content="Compatibility notes for Fix Your Sound Mac plugins.">
     <meta property="og:image" content="https://venticlaw.github.io/josh-labs-site/assets/brand/fys-header-mark.png">
@@ -37,21 +37,36 @@
         <div>
           <p class="eyebrow">Mac-first support</p>
           <h1>Compatibility is part of the beta promise.</h1>
-          <p class="lede">Fix Your Sound is verified first for Mac producers using Logic Pro. Ableton Live remains pending until the separate QA pass is complete.</p>
+          <p class="lede">Fix Your Sound ships from one Mac codebase into Audio Unit and VST3 formats. Logic Pro is the verified path; the Ableton Live VST3 candidate is signed, notarized, plugin-validator tested, and entering hands-on beta validation.</p>
         </div>
         <aside class="panel">
           <div class="metric-table">
             <div><span>macOS</span><strong>Supported first</strong></div>
             <div><span>Logic Pro AU</span><strong>Priority path</strong></div>
-            <div><span>Ableton Live</span><strong>Pending QA</strong></div>
+            <div><span>Ableton Live VST3</span><strong>Beta build ready</strong></div>
             <div><span>Windows</span><strong>Not announced</strong></div>
           </div>
         </aside>
       </section>
       <section class="section support-grid">
-        <article class="support-card"><p class="eyebrow">Your Mix Trash</p><h3>AU/VST3</h3><p>Lite and full builds should scan separately so users can compare before upgrading.</p></article>
-        <article class="support-card"><p class="eyebrow">BassPhat</p><h3>AU/VST3</h3><p>Lite and full builds should keep separate plugin identities and avoid preset conflicts.</p></article>
+        <article class="support-card"><p class="eyebrow">Your Mix Trash</p><h3>AU + VST3</h3><p>Universal Lite and Full builds are packaged separately. Analysis runs inside the plugin with no background service. Ableton beta QA will validate scanning, pass-through audio, UI, and set recall.</p></article>
+        <article class="support-card"><p class="eyebrow">BassPhat</p><h3>AU + VST3</h3><p>Universal Lite and Full builds keep separate identities. Ableton beta QA will validate audio, automation, bypass, and set recall.</p></article>
         <article class="support-card"><p class="eyebrow">Plugin Suite</p><h3>Bundle install</h3><p>The suite should make both products available without hiding which installer added which plugin.</p></article>
+      </section>
+      <section class="band">
+        <div class="section split">
+          <div><p class="eyebrow">Ableton capability</p><h2>VST3 is built. Host validation is next.</h2></div>
+          <div class="panel">
+            <ul class="check-list compact-list">
+              <li><strong>Complete:</strong> universal Intel and Apple Silicon VST3 bundles.</li>
+              <li><strong>Complete:</strong> package payload, identity, Developer ID signatures, Apple notarization, and VST3 metadata checks.</li>
+              <li><strong>Complete:</strong> Lite-to-Full coexistence simulation and Full-only suite validation.</li>
+              <li><strong>Complete:</strong> strict plugin-validator passes for all four VST3 products.</li>
+              <li><strong>In progress:</strong> Live scan, UI, audio, automation, and save/reopen testing.</li>
+              <li><strong>Release gate:</strong> successful hands-on Ableton beta QA.</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="site-footer">
