@@ -9,22 +9,23 @@
     <title>Install Help | Fix Your Sound</title>
     <meta name="description" content="Mac install and DAW scan help for Fix Your Sound plugins.">
     <meta property="og:title" content="Install Help | Fix Your Sound">
-    <meta property="og:description" content="Mac AU and VST3 install checks for Logic Pro and Ableton Live beta users.">
+    <meta property="og:description" content="Mac Audio Unit install checks for Logic Pro users.">
     <meta property="og:image" content="https://venticlaw.github.io/josh-labs-site/assets/brand/fys-header-mark.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="assets/brand/fys-header-mark.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260922-qa-pass">
+    <link rel="stylesheet" href="css/site.css?v=20261115-a11y">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
         <span class="brand-logo"><img src="assets/brand/fys-header-mark.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
         <a href="index.html#products">Products</a>
         <a href="founder.html">About</a>
@@ -32,7 +33,7 @@
         <a class="nav-cta" href="downloads.html">Beta Access</a>
       </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section hero product-hero">
         <div>
           <p class="eyebrow">Mac plugin install</p>
@@ -51,7 +52,7 @@
       </section>
       <section class="section product-grid" aria-label="Install checklist">
         <article class="product-card"><div class="copy"><p class="eyebrow">Step 1</p><h3>Install</h3><p>Run the approved installer package, then restart the DAW before looking for the plugin.</p></div></article>
-        <article class="product-card"><div class="copy"><p class="eyebrow">Step 2</p><h3>Scan</h3><p>Logic scans Audio Units. In Ableton Live, enable VST3 system folders, then rescan Plug-Ins.</p></div></article>
+        <article class="product-card"><div class="copy"><p class="eyebrow">Step 2</p><h3>Scan</h3><p>Restart Logic Pro so it scans the newly installed Audio Unit, then check Plug-In Manager.</p></div></article>
         <article class="product-card"><div class="copy"><p class="eyebrow">Step 3</p><h3>Verify</h3><p>Open the plugin on audio, pass signal through it, save the session, close it, and reopen it.</p></div></article>
       </section>
 
@@ -64,7 +65,6 @@
           <div class="panel">
             <ul class="check-list compact-list">
               <li><strong>Audio Units:</strong> <code>/Library/Audio/Plug-Ins/Components/</code></li>
-              <li><strong>VST3:</strong> <code>/Library/Audio/Plug-Ins/VST3/</code></li>
               <li><strong>Support files:</strong> <code>/Library/Application Support/Fix Your Sound/</code></li>
               <li><strong>Support screenshot:</strong> send the folder view or DAW scanner result if the plugin does not appear.</li>
             </ul>
@@ -74,7 +74,7 @@
 
       <section class="section support-grid">
         <article class="support-card"><p class="eyebrow">Logic Pro pass</p><h3>Audio Units scan</h3><p>Restart Logic, open Plug-In Manager, confirm the plugin validates, insert it on an audio track, then save and reopen the session.</p></article>
-        <article class="support-card"><p class="eyebrow">Ableton beta</p><h3>VST3 scan</h3><p>Open Settings, choose Plug-Ins, enable VST3 system folders, and rescan. Hold Option while clicking Rescan for a deeper scan. Hands-on beta validation is still in progress.</p></article>
+        <article class="support-card"><p class="eyebrow">Launch scope</p><h3>Logic Pro only</h3><p>Ableton Live support is planned after launch. Do not expect this release to appear in Ableton or other VST3 hosts.</p></article>
         <article class="support-card"><p class="eyebrow">Need help</p><h3>Send details</h3><p>Include product, Lite or Full, macOS, Mac chip, DAW version, installer name, and a screenshot of the scan or error.</p></article>
       </section>
     </main>

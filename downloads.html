@@ -16,15 +16,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260922-qa-pass">
+    <link rel="stylesheet" href="css/site.css?v=20261115-a11y2">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
         <span class="brand-logo"><img src="assets/brand/fys-header-mark.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
         <a href="index.html#products">Products</a>
         <a href="founder.html">About</a>
@@ -33,7 +34,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section hero product-hero download-hero">
         <div>
           <p class="eyebrow">Wave 1 beta access</p>
@@ -48,7 +49,7 @@
           <p class="eyebrow">Wave 1 plan</p>
           <ul class="check-list compact-list">
             <li><strong>Initial cap:</strong> 250 approved testers, then the next wave opens after support quality is proven.</li>
-            <li><strong>DAW paths:</strong> Logic Pro AU is verified. The Ableton Live VST3 build is ready for controlled beta validation.</li>
+            <li><strong>Launch path:</strong> Logic Pro Audio Unit on macOS. Ableton Live is not included in this release.</li>
             <li><strong>Access code:</strong> approved testers receive a tracked Wave 1 code.</li>
             <li><strong>Upgrade path:</strong> Lite users can move into full Your Mix Trash, full BassPhat, or the Suite.</li>
           </ul>
@@ -58,12 +59,12 @@
       <section class="section product-grid download-grid" id="lite-downloads" aria-label="Lite build status">
         <article class="product-card">
           <div class="logo-crop">
-            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark">
+            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark" width="1254" height="1254" loading="lazy">
           </div>
           <div class="copy">
             <p class="eyebrow">Lite build</p>
             <h3>Your Mix Trash Lite</h3>
-            <p>Free mix-feedback entry point for hearing what the plugin thinks before moving to the full diagnostic product.</p>
+            <p>Tracked beta access: a mix-feedback entry point for hearing what the plugin thinks before moving to the full diagnostic product.</p>
             <div class="actions">
               <a class="button primary" href="https://app.notion.com/p/7ef2f58acdb14ff880a38d18078bbbe5?v=3daff41a927181f89bf4000c9f23a402&pvs=4" target="_blank" rel="noopener">Request Access</a>
               <a class="button secondary" href="your-mix-trash.html">View Full</a>
@@ -74,12 +75,12 @@
 
         <article class="product-card">
           <div class="logo-crop">
-            <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo">
+            <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo" width="1040" height="658" loading="lazy">
           </div>
           <div class="copy">
             <p class="eyebrow">Lite build</p>
             <h3>BassPhat Lite</h3>
-            <p>Free low-end starter for testing bass weight and control before moving to the full product.</p>
+            <p>Tracked beta access: a low-end starter for testing bass weight and control before moving to the full product.</p>
             <div class="actions">
               <a class="button primary" href="https://app.notion.com/p/7ef2f58acdb14ff880a38d18078bbbe5?v=3daff41a927181f89bf4000c9f23a402&pvs=4" target="_blank" rel="noopener">Request Access</a>
               <a class="button secondary" href="bassphat.html">View Full</a>
@@ -90,15 +91,15 @@
 
         <article class="product-card">
           <div class="logo-crop suite-crop">
-            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark">
-            <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo">
+            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark" width="1254" height="1254" loading="lazy">
+            <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo" width="1040" height="658" loading="lazy">
           </div>
           <div class="copy">
             <p class="eyebrow">Full upgrade</p>
             <h3>Plugin Suite</h3>
             <p>Upgrade to both full products for the current major versions after Lite proves the tools belong in the session.</p>
             <div class="actions">
-              <a class="button primary" href="https://app.notion.com/p/7ef2f58acdb14ff880a38d18078bbbe5?v=3daff41a927181f89bf4000c9f23a402&pvs=4" target="_blank" rel="noopener">Request Upgrade</a>
+              <a class="button primary" href="https://app.notion.com/p/7ef2f58acdb14ff880a38d18078bbbe5?v=3daff41a927181f89bf4000c9f23a402&pvs=4" target="_blank" rel="noopener">Request Suite Upgrade</a>
               <a class="button secondary" href="plugin-suite.html">Compare</a>
             </div>
           </div>
@@ -113,32 +114,45 @@
           </div>
           <a class="button secondary" href="plugin-suite.html">Compare Bundle</a>
         </div>
-        <div class="comparison-table">
-          <div class="comparison-row comparison-head">
-            <strong>Product</strong>
-            <strong>Lite</strong>
-            <strong>Full</strong>
-          </div>
-          <div class="comparison-row">
-            <strong>Your Mix Trash</strong>
-            <span>Free diagnostic preview, core mix score, starter issue categories, and enough roast-coach feedback to know what is wrong.</span>
-            <span>More complete analysis, deeper issue notes, stronger media-type guidance, full roast-coach detail, and current major-version access.</span>
-          </div>
-          <div class="comparison-row">
-            <strong>BassPhat</strong>
-            <span>Starter low-end color with a reduced control range for testing bass, 808s, kicks, and low-end groups.</span>
-            <span>Full low-end control range, deeper shaping, Drive, output control, and current major-version access.</span>
-          </div>
-          <div class="comparison-row">
-            <strong>Suite value</strong>
-            <span>Try one or both Lite builds first and keep them available for comparison.</span>
-            <span>Get both full products together for the best value when paid access opens.</span>
-          </div>
-          <div class="comparison-row">
-            <strong>Install behavior</strong>
-            <span>Lite installs as its own plugin so early testers can compare without overwriting full versions later.</span>
-            <span>Full installs separately, then the DAW gets restarted and rescanned before the session is trusted.</span>
-          </div>
+        <div class="price-strip edition-strip" aria-label="Lite, Full and Suite path">
+          <div><span>1. Lite</span><strong>Tracked beta access</strong></div>
+          <div><span>2. Full (each plugin)</span><strong>$59</strong></div>
+          <div><span>3. Suite (both plugins)</span><strong>$99</strong></div>
+        </div>
+        <p class="small-note">Path: start with Lite, upgrade to a single Full plugin, or take the Suite for both. Paid access is not open yet; Logic Pro on macOS only, Ableton Live is pending and not supported.</p>
+        <div class="comparison-scroll">
+        <table class="comparison-table">
+          <caption class="sr-only">Lite and Full comparison by product</caption>
+          <thead>
+            <tr class="comparison-row comparison-head">
+              <th scope="col">Product</th>
+              <th scope="col">Lite (tracked beta access)</th>
+              <th scope="col">Full</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="comparison-row">
+              <th scope="row">Your Mix Trash</th>
+              <td>Tracked beta access: diagnostic preview, core mix score, starter issue categories, and enough roast-coach feedback to know what is wrong.</td>
+              <td>More complete analysis, deeper issue notes, stronger media-type guidance, full roast-coach detail, and current major-version access.</td>
+            </tr>
+            <tr class="comparison-row">
+              <th scope="row">BassPhat</th>
+              <td>Starter low-end color with a reduced control range for testing bass, 808s, kicks, and low-end groups.</td>
+              <td>Full low-end control range, deeper shaping, Drive, output control, and current major-version access.</td>
+            </tr>
+            <tr class="comparison-row">
+              <th scope="row">Suite value</th>
+              <td>Try one or both Lite builds first and keep them available for comparison.</td>
+              <td>Get both full products together for the best value when paid access opens.</td>
+            </tr>
+            <tr class="comparison-row">
+              <th scope="row">Install behavior</th>
+              <td>Lite installs as its own plugin so early testers can compare without overwriting full versions later.</td>
+              <td>Full installs separately, then the DAW gets restarted and rescanned before the session is trusted.</td>
+            </tr>
+          </tbody>
+        </table>
         </div>
       </section>
 
@@ -172,7 +186,7 @@
               <div><span>04</span><strong>Keep both available</strong><p>Lite and full installs should coexist during comparison, then support can guide cleanup if the user wants only full versions.</p></div>
             </div>
             <div class="hero-actions">
-              <a class="button primary" href="https://app.notion.com/p/7ef2f58acdb14ff880a38d18078bbbe5?v=3daff41a927181f89bf4000c9f23a402&pvs=4" target="_blank" rel="noopener">Request Full Upgrade</a>
+              <a class="button primary" href="https://app.notion.com/p/7ef2f58acdb14ff880a38d18078bbbe5?v=3daff41a927181f89bf4000c9f23a402&pvs=4" target="_blank" rel="noopener">Request Full Plugin Upgrade</a>
               <a class="button secondary" href="support.html">Install Help</a>
               <a class="button secondary" href="compatibility.html">Compatibility</a>
               <a class="button secondary" href="refunds.html">Purchase Help</a>
@@ -187,16 +201,19 @@
           <p class="eyebrow">First install</p>
           <h3>Get set up</h3>
           <p>Find the current Mac install notes and what to send support if a plugin does not appear.</p>
+          <a class="button secondary" href="install-help.html">Install Help</a>
         </article>
         <article class="support-card">
           <p class="eyebrow">DAW support</p>
           <h3>Check compatibility</h3>
-          <p>See the current Mac, Logic Pro AU, and Ableton Live VST3 beta support notes.</p>
+          <p>See the current macOS and Logic Pro Audio Unit support notes.</p>
+          <a class="button secondary" href="compatibility.html">Compatibility</a>
         </article>
         <article class="support-card">
           <p class="eyebrow">For teams</p>
           <h3>Schools and studios</h3>
           <p>Explore shared plugin access for classrooms, producer labs, and studio rooms.</p>
+          <a class="button secondary" href="schools-studios.html">Schools / Studios</a>
         </article>
       </section>
     </main>

@@ -7,21 +7,22 @@
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Your Mix Trash | Fix Your Sound</title>
-    <meta name="description" content="Your Mix Trash is a Mac AU and VST3 mix coach for Logic Pro and Ableton Live beta workflows, with scoring, timestamped notes, and plain-English rationale.">
+    <meta name="description" content="Your Mix Trash is a Mac Audio Unit mix coach for Logic Pro, with scoring, timestamped notes, and plain-English rationale.">
     <link rel="icon" type="image/png" href="assets/brand/fys-header-mark.png">
     <meta property="og:image" content="https://venticlaw.github.io/josh-labs-site/assets/plugins/your-mix-trash-official-mark.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260922-qa-pass">
+    <link rel="stylesheet" href="css/site.css?v=20261115-a11y2">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
         <span class="brand-logo"><img src="assets/brand/fys-header-mark.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
         <a href="index.html#products">Products</a>
         <a href="founder.html">About</a>
@@ -29,23 +30,32 @@
         <a class="nav-cta" href="downloads.html">Beta Access</a>
       </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section hero product-hero">
         <div>
-          <p class="eyebrow">Mac AU + VST3 - Logic verified - Ableton beta build ready</p>
+          <p class="eyebrow">macOS Audio Unit - Logic Pro release</p>
           <h1>Your Mix Trash.</h1>
           <p class="lede">An unfiltered mix coach that scores the session, flags problem areas, and explains why the next move matters.</p>
           <div class="hero-actions">
             <a class="button primary" href="downloads.html">Beta Access</a>
             <a class="button secondary" href="plugin-suite.html">Bundle with BassPhat</a>
           </div>
-          <p class="small-note">Logic Pro is the verified host path. The Ableton Live VST3 build is signed, notarized, plugin-validator tested, and entering hands-on beta QA.</p>
+          <p class="small-note">This release supports Logic Pro on macOS. Ableton Live support is planned, but is not included or validated for launch.</p>
         </div>
         <aside class="hero-media">
           <div class="logo-crop product-logo-crop mark-crop">
-            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark">
+            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark" width="1254" height="1254">
           </div>
         </aside>
+      </section>
+
+      <section class="section" aria-label="Lite and Full editions">
+        <div class="price-strip edition-strip">
+          <div><span>Lite</span><strong>Tracked beta access</strong></div>
+          <div><span>Full</span><strong>$59</strong></div>
+          <div><span>Suite (both plugins)</span><strong>$99</strong></div>
+        </div>
+        <p class="small-note">Paid access is not open yet. Logic Pro on macOS only; Ableton Live is pending and not supported.</p>
       </section>
 
       <section class="section feature-grid" aria-label="Your Mix Trash features">

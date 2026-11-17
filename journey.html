@@ -17,15 +17,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260922-qa-pass">
+    <link rel="stylesheet" href="css/site.css?v=20261115-a11y">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
         <span class="brand-logo"><img src="assets/brand/fys-header-mark.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
         <a href="index.html#products">Products</a>
         <a href="founder.html">About</a>
@@ -34,7 +35,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section hero product-hero journey-hero">
         <div>
           <p class="eyebrow">End-to-end beta path</p>
@@ -50,7 +51,7 @@
           <ul class="check-list compact-list">
             <li><strong>Site path:</strong> live and public-safe.</li>
             <li><strong>Beta access:</strong> controlled by approved Wave 1 codes.</li>
-            <li><strong>Mac support:</strong> Logic Pro AU is verified; Ableton Live VST3 beta validation is in progress.</li>
+            <li><strong>Mac support:</strong> the launch scope is Logic Pro Audio Unit on macOS.</li>
             <li><strong>Upgrade path:</strong> Lite users can move to Full or Suite when ready.</li>
           </ul>
         </aside>
@@ -86,7 +87,7 @@
           <div>
             <p class="eyebrow">DAW scan</p>
             <h3>Appears in the DAW</h3>
-            <p>Logic Pro is the verified AU path. Ableton Live testers use the VST3 beta candidate to validate scanning, audio, UI, automation, and set recall.</p>
+            <p>Logic Pro is the launch Audio Unit path. Ableton Live support remains a separate post-launch validation track.</p>
           </div>
         </article>
         <article class="journey-step pending">
@@ -140,7 +141,7 @@
           <div class="panel">
             <ul class="check-list compact-list">
               <li><strong>Keep access controlled:</strong> approve Wave 1 testers before opening the next wave.</li>
-              <li><strong>Support Mac first:</strong> keep Logic Pro AU and Ableton Live VST3 guidance tied to verified beta evidence.</li>
+              <li><strong>Support Mac first:</strong> keep public guidance tied to the verified Logic Pro Audio Unit release.</li>
               <li><strong>Make upgrades obvious:</strong> show what Full and Suite unlock before asking people to pay.</li>
               <li><strong>Protect the experience:</strong> keep product names, receipts, delivery, and support language consistent.</li>
             </ul>

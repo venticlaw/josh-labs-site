@@ -16,15 +16,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260922-qa-pass">
+    <link rel="stylesheet" href="css/site.css?v=20261115-a11y">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
         <span class="brand-logo"><img src="assets/brand/fys-header-mark.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
         <a href="index.html#products">Products</a>
         <a href="founder.html">About</a>
@@ -32,7 +33,7 @@
         <a class="nav-cta" href="downloads.html">Beta Access</a>
       </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section hero product-hero">
         <div>
           <p class="eyebrow">Purchase expectations</p>
@@ -51,7 +52,7 @@
       <section class="section support-grid">
         <article class="support-card"><p class="eyebrow">License scope</p><h3>Current major version</h3><p>Purchases should clearly state current major-version access unless the checkout receipt says otherwise.</p></article>
         <article class="support-card"><p class="eyebrow">Install issue</p><h3>Support first</h3><p>For failed installs, support needs the order email, product, macOS version, DAW, and screenshot of the issue.</p></article>
-        <article class="support-card"><p class="eyebrow">Refund request</p><h3>Human review</h3><p>Refund requests should start with support so install issues can be understood before a final decision.</p></article>
+        <article class="support-card"><p class="eyebrow">Refund request</p><h3>Digital purchase policy</h3><p>Digital software sales are generally final. Duplicate charges, failed delivery, wrong-product purchases, processor decisions, and exceptions required by applicable law will be reviewed.</p></article>
         <article class="support-card"><p class="eyebrow">Software rights</p><h3>Protected software</h3><p>Fix Your Sound plugins, interfaces, copy, logos, and brand assets are protected by copyright and other applicable rights. A purchase grants product use under the stated license scope, not ownership of the underlying software or assets.</p></article>
       </section>
 
@@ -66,7 +67,7 @@
               <li><strong>Product prices:</strong> Your Mix Trash $59, BassPhat $59, Plugin Suite $99 when paid access opens.</li>
               <li><strong>Receipt:</strong> should name the product, version scope, support path, and delivery method.</li>
               <li><strong>Delivery:</strong> should explain installer format, license instructions, and expected timing.</li>
-              <li><strong>Refund review:</strong> should start with install support and follow the checkout policy shown at purchase.</li>
+              <li><strong>Refund review:</strong> digital sales are generally final, subject to duplicate charges, failed delivery, wrong-product cases, Lemon Squeezy decisions, and applicable law.</li>
             </ul>
           </div>
         </div>

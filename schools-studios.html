@@ -16,15 +16,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260922-qa-pass">
+    <link rel="stylesheet" href="css/site.css?v=20261115-a11y">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
         <span class="brand-logo"><img src="assets/brand/fys-header-mark.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
         <a href="index.html#products">Products</a>
         <a href="founder.html">About</a>
@@ -32,7 +33,7 @@
         <a class="nav-cta" href="downloads.html">Beta Access</a>
       </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section hero product-hero">
         <div>
           <p class="eyebrow">Bulk-license options</p>
@@ -48,7 +49,7 @@
           <ul class="check-list compact-list">
             <li>Producer classrooms and music labs.</li>
             <li>Studio rooms with repeat users.</li>
-            <li>Logic Pro AU environments and controlled Ableton Live VST3 beta labs on Mac.</li>
+            <li>Logic Pro Audio Unit environments on Mac; Ableton Live support is planned after launch.</li>
             <li>Human-reviewed school and studio inquiries.</li>
           </ul>
         </aside>

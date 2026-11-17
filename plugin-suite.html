@@ -13,15 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/site.css?v=20260922-qa-pass">
+    <link rel="stylesheet" href="css/site.css?v=20261115-a11y2">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Fix Your Sound home">
         <span class="brand-logo"><img src="assets/brand/fys-header-mark.png" alt="" aria-hidden="true"></span>
         <span><strong>Fix Your Sound</strong><small>Audio tools for real mixes</small></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" data-site-nav>
         <a href="index.html#products">Products</a>
         <a href="founder.html">About</a>
@@ -29,10 +30,10 @@
         <a class="nav-cta" href="downloads.html">Beta Access</a>
       </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="section hero product-hero">
         <div>
-          <p class="eyebrow">Mac AU + VST3 - Logic verified - Ableton beta build ready</p>
+          <p class="eyebrow">macOS Audio Unit - Logic Pro release</p>
           <h1>Plugin Suite Bundle.</h1>
           <p class="lede">Your Mix Trash tells the truth about the mix. BassPhat makes the low end translate. The suite puts honest feedback and controlled weight in one Fix Your Sound toolkit.</p>
           <div class="hero-actions">
@@ -43,8 +44,8 @@
         </div>
         <aside class="hero-media">
           <div class="logo-crop suite-crop product-logo-crop" aria-label="Plugin Suite logos">
-            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark">
-            <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo">
+            <img src="assets/plugins/your-mix-trash-official-mark.png" alt="Your Mix Trash logo" class="trash-mark" width="1254" height="1254">
+            <img src="assets/plugins/bass-phat-official-plaque.png" alt="BassPhat logo" width="1040" height="658">
           </div>
           <div class="price-strip">
             <div><span>Your Mix Trash</span><strong>$59</strong></div>
@@ -54,10 +55,19 @@
         </aside>
       </section>
 
+      <section class="section" aria-label="Lite and Full editions">
+        <div class="price-strip edition-strip">
+          <div><span>Lite</span><strong>Tracked beta access</strong></div>
+          <div><span>Full (each plugin)</span><strong>$59 each</strong></div>
+          <div><span>Suite (both plugins)</span><strong>$99</strong></div>
+        </div>
+        <p class="small-note">Paid access is not open yet. Logic Pro on macOS only; Ableton Live is pending and not supported.</p>
+      </section>
+
       <section class="section product-grid">
         <article class="product-card"><div class="copy"><p class="eyebrow">Included</p><h3>Your Mix Trash</h3><p>Mix scoring, timestamped notes, and learning context.</p><a class="button secondary" href="your-mix-trash.html">View Your Mix Trash</a></div></article>
         <article class="product-card"><div class="copy"><p class="eyebrow">Included</p><h3>BassPhat</h3><p>Low-end translation, harmonic read, and bass control.</p><a class="button secondary" href="bassphat.html">View BassPhat</a></div></article>
-        <article class="product-card"><div class="copy"><p class="eyebrow">Mac support</p><h3>Logic + Ableton builds</h3><p>Audio Unit is verified in Logic Pro. The Ableton Live VST3 candidate is signed, notarized, plugin-validator tested, and entering hands-on beta QA.</p><a class="button secondary" href="compatibility.html">Compatibility status</a></div></article>
+        <article class="product-card"><div class="copy"><p class="eyebrow">Mac support</p><h3>Logic Pro Audio Units</h3><p>The launch package supports Logic Pro on macOS. Ableton Live support remains a planned post-launch capability.</p><a class="button secondary" href="compatibility.html">Compatibility status</a></div></article>
       </section>
 
       <section class="band">

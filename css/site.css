@@ -2401,3 +2401,119 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Accessibility: skip link, focus-visible, reduced motion */
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  color: #050507;
+  background: #fbf7ed;
+  font-weight: 850;
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 3px solid #f2b84b;
+  outline-offset: 2px;
+}
+
+main:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #f2b84b;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px #050507;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  a:hover,
+  button:hover,
+  .button:hover,
+  .site-nav a:hover,
+  [class*="card"]:hover,
+  [class*="panel"]:hover,
+  [class*="tile"]:hover,
+  [class*="product"]:hover,
+  [class*="shot"]:hover,
+  [class*="visual"]:hover,
+  img:hover {
+    transform: none !important;
+  }
+}
+
+/* 2026-11-15 FYS packets 3-4: edition strip and semantic comparison table */
+.edition-strip {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.comparison-scroll {
+  overflow-x: auto;
+}
+
+table.comparison-table {
+  display: table;
+  width: 100%;
+  min-width: 640px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  overflow: visible;
+}
+
+table.comparison-table .comparison-row {
+  display: table-row;
+}
+
+table.comparison-table th,
+table.comparison-table td {
+  padding: 18px;
+  background: rgba(17, 18, 23, 0.96);
+  color: var(--muted);
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.comparison-table th {
+  color: var(--paper);
+  font-weight: 800;
+}
+
+table.comparison-table thead th {
+  background: rgba(255, 77, 42, 0.18);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
