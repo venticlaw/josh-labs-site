@@ -24,3 +24,17 @@ if (navToggle && siteNav) {
     }
   });
 }
+
+// Mark the current page in the site nav (skips links with in-page anchors).
+if (siteNav) {
+  const here = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  siteNav.querySelectorAll("a[href]").forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || href.includes("#") || link.hasAttribute("aria-current")) {
+      return;
+    }
+    if (href.split("/").pop().toLowerCase() === here) {
+      link.setAttribute("aria-current", "page");
+    }
+  });
+}
